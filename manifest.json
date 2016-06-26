@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "北化图书馆助手",
+  "description": "提供图书馆检索",
+  "version": "0.20",
+  "permissions":[
+  "http://202.4.153.19:8080/opac_two/search2/searchout.jsp"
+  ],
+  "permissions": [
+     "https://api.douban.com/*"
+   ],
+  "content_scripts": [
+    {
+      "matches": ["http://202.4.153.19:8080/opac_two/search2/searchout.jsp"],
+     
+      "js":["jquery.min.js", "ForSearch.js"]
+      // "css":["./bootstrap/css/bootstrap-theme.min.css"] ,"./bootstrap/js/bootstrap.min.js"
+    }
+  ],
+  "icons": 
+    {            
+      "128": "uce.png" 
+    },  
+  "browser_action": {
+    "default_icon": "uce.png",
+    "default_popup": "index.html"
+  }
+
+}
