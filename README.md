@@ -6,7 +6,7 @@
 > 将北化图书馆检索结果自动增加豆瓣图片，评分以及简介
 
 效果：
-> ![](uce.png)
+> ![](impression_drawing.png)
 
 环境：
 > 支持 Chrome 及 Chromium内核的浏览器（猎豹，搜狗，360）
